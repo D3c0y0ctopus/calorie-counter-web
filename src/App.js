@@ -52,8 +52,8 @@ function App() {
       <div className="calories-container">
         <TotalCalories totalCalories={totalCalories} />
         <div className="buttons-container">
-          <button onClick={handleUndo}>Undo</button>
-          <button onClick={handleReset}>Reset</button>
+          <button className="button-95" onClick={handleUndo}>Undo</button>
+          <button className="button-95" onClick={handleReset}>Reset</button>
         </div>
       </div>
     </div>

@@ -50,9 +50,77 @@
 .buttons-container {
   text-align: right; /* Align buttons to the right under Total Calories */
   margin-top: 20px;
+  
 }
 
 .buttons-container button {
   margin: 0 10px;
+  font-family: 'mario';
 }
 
+
+
+.button-95 {
+  background-color: #ff5e57; /* Classic grey background */
+  border: none;
+  padding: 6px 12px;
+  font-family: 'mario', Arial, sans-serif; /* Pixelated font or Arial as fallback */
+  font-size: 16px; /* Size of the text */
+  color: whitesmoke;
+  text-transform: uppercase; /* Button text style */
+  outline: none;
+  cursor: pointer;
+  position: relative; /* For pseudo-element positioning */
+  user-select: none; /* Prevent text selection */
+  -webkit-user-select: none;
+  margin: 0 4px; /* Space between buttons */
+}
+
+.button-95:active {
+  background-color: #a9a9a9; /* Darker background when button is clicked */
+}
+
+.button-95:before, /* Top & Left border */
+.button-95:after { /* Bottom & Right border */
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.button-95:before {
+  border-top: 2px solid #ff897a; /* White top border */
+  border-left: 2px solid #ff897a; /* White left border */
+  top: -2px; /* Shift border outside of button */
+  left: -2px;
+}
+
+.button-95:after {
+  border-bottom: 2px solid #e55039; /* Dark grey bottom border */
+  border-right: 2px solid #e55039; /* Dark grey right border */
+  top: 2px; /* Shift border inside of button to give depth */
+  left: 2px;
+}
+
+
+
+
+.total-calories-container {
+  text-align: center; /* Center the content */
+  color: white; /* Default color */
+}
+
+.total-calories-label {
+  font-family: 'mario', Arial, sans-serif; /* Mario font for the label */
+  color: #ffc048;
+  font-size: 26px
+  /* Additional styling as needed */
+}
+
+.total-calories-value {
+  font-family: 'mario', Arial, sans-serif; /* Mario font for the label */
+  color: #0be881; /* Green color for the value */
+  font-size: 30px
+  /* Additional styling as needed */
+}
