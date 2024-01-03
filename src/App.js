@@ -3,18 +3,18 @@ import Papa from 'papaparse';
 import FoodList from './FoodList';
 import TotalCalories from './TotalCalories';
 import './App.css';
+import './fonts/mario.ttf';
 
 function App() {
   const [totalCalories, setTotalCalories] = useState(0);
   const [foods, setFoods] = useState([]);
-  const [caloriesHistory, setCaloriesHistory] = useState([]);
+  const [actionHistory, setActionHistory] = useState([]);
 
   useEffect(() => {
     Papa.parse('/foodData.csv', {
       download: true,
       header: true,
       complete: (result) => {
-        // Process and set the data in state
         setFoods(result.data.map(food => ({
           name: food.name,
           calories: parseInt(food.calories, 10)
@@ -23,30 +23,41 @@ function App() {
     });
   }, []);
 
-  const handleFoodSelect = (calories) => {
-    setCaloriesHistory(prevHistory => [...prevHistory, totalCalories]);
+  const handleFoodSelect = (index, calories) => {
+    setActionHistory(prevHistory => [...prevHistory, { index, calories }]);
     setTotalCalories(totalCalories + calories);
   };
 
   const handleUndo = () => {
-    setCaloriesHistory(prevHistory => prevHistory.slice(0, -1));
-    setTotalCalories(caloriesHistory[caloriesHistory.length - 1] || 0);
+    const newHistory = [...actionHistory];
+    const lastAction = newHistory.pop();
+    setActionHistory(newHistory);
+    setTotalCalories(totalCalories - (lastAction?.calories || 0));
   };
 
   const handleReset = () => {
-    setCaloriesHistory([]);
+    setActionHistory([]); // Clear the action history
     setTotalCalories(0);
   };
 
   return (
     <div className="App">
-      <FoodList foods={foods} onFoodSelect={handleFoodSelect} />
-      <TotalCalories totalCalories={totalCalories} />
-      <button onClick={handleUndo}>Undo</button>
-      <button onClick={handleReset}>Reset</button>
+      <div className="food-list-container">
+        <FoodList
+          foods={foods}
+          onFoodSelect={handleFoodSelect}
+          actionHistory={actionHistory} // Pass actionHistory to FoodList
+        />
+      </div>
+      <div className="calories-container">
+        <TotalCalories totalCalories={totalCalories} />
+        <div className="buttons-container">
+          <button onClick={handleUndo}>Undo</button>
+          <button onClick={handleReset}>Reset</button>
+        </div>
+      </div>
     </div>
   );
-
 }
 
 export default App;

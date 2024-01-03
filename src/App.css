@@ -1,36 +1,58 @@
+@font-face {
+  font-family: 'mario'; /* This is the name you'll use throughout your CSS */
+  src: url('./fonts/mario.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App {
+  background-color: #1e272e; /* Set the background color for the whole app */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  font-family: 'CustomFont', Arial, sans-serif;
+  color: #d2dae2; /* Set the default text color for the app */
 }
 
-.food-list {
-  flex: 1;
+.food-list-container {
+  flex: 0 1 auto; /* Allow the list to only take up the space it needs */
+  margin-right: 20px; /* Right margin for spacing between the list and the total calories */
   padding: 20px;
+  font-family: 'mario';
   font-size: small;
+  max-width: 50%; /* Adjust max-width to fit the content nicely on larger screens */
+}
+
+.food-item {
+  cursor: pointer;
+  margin-bottom: 10px; /* Adjust line spacing between food items */
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+.food-item:hover {
+  color: #FFFCEE; /* Change text color when hovered */
+}
+
+.food-item.selected {
+  color: #ffdd59; /* Change text color when selected */
 }
 
 .total-calories {
-  flex: 1;
-  text-align: center;
+  flex: 0 1 auto; /* Allow the calories to only take up the space it needs */
+  text-align: right; /* Align to the right to keep it center-right of the screen */
+  padding: 20px;
+  color: white; /* Set the color for Total Calories */
   font-size: larger;
+  max-width: 50%; /* Adjust max-width to fit the content nicely on larger screens */
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
+.buttons-container {
+  text-align: right; /* Align buttons to the right under Total Calories */
+  margin-top: 20px;
 }
 
-/* Assuming each food item is wrapped in a div or another element with a specific class name */
-.food-item {
-  cursor: pointer;
+.buttons-container button {
+  margin: 0 10px;
 }
 
-/* Or if you don't have a specific class for food items, you can target all divs inside the food list container */
-.food-list-container div {
-  cursor: pointer;
-}
