@@ -65,11 +65,13 @@ function App() {
         <div className="stripe stripe-5"></div>
       </div>
       <div className="title-container">
-      <h1>
-      Rambo's{' '} 
+    <h1>
+      Rambo's{' '}
       <span className="animated-title">
-        {"Fat-O-Meter".split('').map((char, index) => (
-          <span key={index} className="letter-animation">{char}</span>
+        {"Lard-O-Meter".split('').map((char, index) => (
+          <span key={index} className={`letter-animation letter-${index}`}>
+            {char}
+          </span>
         ))}
       </span>
     </h1>

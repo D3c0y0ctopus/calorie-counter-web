@@ -93,9 +93,19 @@ body {
   animation: colorChange 4s steps(8, end) infinite; /* Apply the keyframe animation */
 }
 
-/* You can adjust the animation duration and delay to control the speed and sync */
+.letter-0 { animation-delay: 0s; }
+.letter-1 { animation-delay: 0.1s; }
+.letter-2 { animation-delay: 0.2s; }
+.letter-3 { animation-delay: 0.3s; }
+.letter-4 { animation-delay: 0s; }
+.letter-5 { animation-delay: 0.1s; }
+.letter-6 { animation-delay: 0.2s; }
+.letter-7 { animation-delay: 0.3s;}
+.letter-8 { animation-delay: 0s; }
+.letter-9 { animation-delay: 0.1s; }
+.letter-10 { animation-delay: 0.2s; }
+.letter-11 { animation-delay: 0.3s;}
 
-/* Add styles for the food list container to center its content */
 .food-list-container {
   /* ... existing styles ... */
   flex: 1;
