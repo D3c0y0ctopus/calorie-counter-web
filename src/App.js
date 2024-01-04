@@ -42,18 +42,30 @@ function App() {
 
   return (
     <div className="App">
-      <div className="food-list-container">
-        <FoodList
-          foods={foods}
-          onFoodSelect={handleFoodSelect}
-          actionHistory={actionHistory} // Pass actionHistory to FoodList
-        />
+      <div className="stripes-container">
+        <div className="stripe stripe-1"></div>
+        <div className="stripe stripe-2"></div>
+        
+        <div className="stripe stripe-4"></div>
+        <div className="stripe stripe-5"></div>
       </div>
-      <div className="calories-container">
-        <TotalCalories totalCalories={totalCalories} />
-        <div className="buttons-container">
-          <button className="button-95" onClick={handleUndo}>Undo</button>
-          <button className="button-95" onClick={handleReset}>Reset</button>
+
+      <div className="main-content">
+        <div className="content-container"> {/* New wrapper div */}
+          <div className="food-list-container">
+            <FoodList
+              foods={foods}
+              onFoodSelect={handleFoodSelect}
+              actionHistory={actionHistory}
+            />
+          </div>
+          <div className="side-container">
+            <TotalCalories totalCalories={totalCalories} />
+            <div className="buttons-container">
+              <button className="button-95" onClick={handleUndo}>Undo</button>
+              <button className="button-95" onClick={handleReset}>Reset</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -8,20 +8,80 @@
 .App {
   background-color: #1e272e; /* Set the background color for the whole app */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* Stack children elements vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: flex-start; /* Align children to the start vertically */
   min-height: 100vh;
-  font-family: 'CustomFont', Arial, sans-serif;
+  font-family: 'mario', sans-serif; /* Fallback font */
   color: #d2dae2; /* Set the default text color for the app */
+  padding-top: 60px; /* Height of the stripes container */
 }
 
+/* Reset the padding and margin of the body to remove default spacing */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.stripes-container {
+  position: fixed; /* Fixed position to always stay at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px; /* Adjust the height of each stripe */
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+/* Keep the stripe height equal to the stripes-container height divided by the number of stripes */
+.stripe {
+  height: calc(60px / 3); /* Adjust the divisor based on the number of stripes */
+  width: 100%;
+}
+
+/* Center the main content vertically after the stripes */
+.main-content {
+  display: flex;
+  justify-content: row; /* Horizontally center the content */
+  align-items: flex-start; /* Start aligning items from the top */
+
+  width: 100%;
+  padding-top: 60px; /* Ensure this is the height of your stripes container */
+  padding-bottom: 20px;
+}
+
+.side-container {
+  flex: 1; /* Take up available space but respect max-width */
+  max-width: 50%; /* Ensure the side content doesn't take more than half the width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  margin-left: 20px; /* Spacing between list and side content */
+}
+
+  
+
+
+/* Add styles for the food list container to center its content */
 .food-list-container {
-  flex: 0 1 auto; /* Allow the list to only take up the space it needs */
-  margin-right: 20px; /* Right margin for spacing between the list and the total calories */
-  padding: 20px;
-  font-family: 'mario';
-  font-size: small;
-  max-width: 50%; /* Adjust max-width to fit the content nicely on larger screens */
+  /* ... existing styles ... */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%; 
+}
+
+
+
+.content-container {
+
+  display: flex;
+  width: 100%;
+  justify-content: center; /* Center the children (food list and side container) */
+  align-items: start; /* Align the items at the start (top) */
 }
 
 .food-item {
@@ -53,9 +113,11 @@
   
 }
 
-.buttons-container button {
-  margin: 0 10px;
-  font-family: 'mario';
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 
@@ -74,10 +136,11 @@
   user-select: none; /* Prevent text selection */
   -webkit-user-select: none;
   margin: 0 4px; /* Space between buttons */
+  margin-bottom: 10px;
 }
 
 .button-95:active {
-  background-color: #a9a9a9; /* Darker background when button is clicked */
+  background-color: #fd837d; /* Darker background when button is clicked */
 }
 
 .button-95:before, /* Top & Left border */
@@ -113,7 +176,7 @@
 
 .total-calories-label {
   font-family: 'mario', Arial, sans-serif; /* Mario font for the label */
-  color: #ffc048;
+  color: #d2dae2;
   font-size: 26px
   /* Additional styling as needed */
 }
@@ -124,3 +187,32 @@
   font-size: 30px
   /* Additional styling as needed */
 }
+
+
+
+
+
+
+
+.stripes-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Total height of all stripes together */
+  display: flex;
+  flex-direction: column; /* Stack stripes on top of each other */
+}
+
+/* Each stripe will now take up the full width and have an equal portion of the total container height */
+.stripe {
+  height: 20px; /* Set each stripe to a fixed height */
+  width: 100%;
+}
+
+.stripe-1 { background-color: #4bcffa; } /* Red */
+.stripe-2 { background-color: #FF7F00; } /* Orange */
+
+.stripe-4 { background-color: #ffd32a; } /* Yellow */
+.stripe-5 { background-color: #05c46b; } /* Yellow */
+
