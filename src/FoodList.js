@@ -11,7 +11,7 @@ function FoodList({ onFoodSelect, foods, actionHistory }) {
         <div
           key={index}
           className={`food-item ${isHighlighted(index) ? 'selected' : ''}`}
-          onClick={() => onFoodSelect(index, food.calories)}
+          onClick={() => onFoodSelect(index)}
         >
           {food.name}
         </div>
@@ -19,6 +19,5 @@ function FoodList({ onFoodSelect, foods, actionHistory }) {
     </div>
   );
 }
-
 
 export default FoodList;

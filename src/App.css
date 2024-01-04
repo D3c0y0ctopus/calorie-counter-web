@@ -24,7 +24,7 @@ body {
 }
 
 .stripes-container {
-  position: fixed; /* Fixed position to always stay at the top */
+  position: absolute; /* Fixed position to always stay at the top */
   top: 0;
   left: 0;
   width: 100%;
@@ -61,7 +61,18 @@ body {
   margin-left: 20px; /* Spacing between list and side content */
 }
 
-  
+.title-container {
+  text-align: center;
+  padding: 20px 0; /* Add padding above and below the title */
+  width: 100%; /* Ensure the title container takes full width */
+}
+
+.title-container h1 {
+  font-family: 'mario', Arial, sans-serif; /* Use your custom font */
+  color: #FFF; /* Choose a color that fits your design */
+  font-size: 35px; /* Adjust the size as needed */
+  margin: 5; /* Remove default margins */
+} 
 
 
 /* Add styles for the food list container to center its content */

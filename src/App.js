@@ -15,25 +15,41 @@ function App() {
       download: true,
       header: true,
       complete: (result) => {
-        setFoods(result.data.map(food => ({
-          name: food.name,
-          calories: parseInt(food.calories, 10)
-        })));
+        console.log(result.data); // Log the raw data from CSV to see what's being parsed
+        const parsedFoods = result.data.map(food => {
+          const calories = parseInt(food.calories, 10);
+          console.log(`Parsing: ${food.calories} to ${calories}`); // Log each parse
+          return {
+            name: food.name,
+            calories: calories
+          };
+        });
+        setFoods(parsedFoods);
       }
     });
   }, []);
 
-  const handleFoodSelect = (index, calories) => {
-    setActionHistory(prevHistory => [...prevHistory, { index, calories }]);
-    setTotalCalories(totalCalories + calories);
+  
+
+  const handleFoodSelect = (index) => {
+    const foodItem = foods[index];
+    if (foodItem && !isNaN(foodItem.calories)) {
+      setActionHistory(prevHistory => [...prevHistory, { index, calories: foodItem.calories }]);
+      setTotalCalories(prevTotal => prevTotal + foodItem.calories);
+    } else {
+      console.error('Invalid calories value', foodItem);
+    }
   };
 
   const handleUndo = () => {
-    const newHistory = [...actionHistory];
-    const lastAction = newHistory.pop();
-    setActionHistory(newHistory);
-    setTotalCalories(totalCalories - (lastAction?.calories || 0));
+    if (actionHistory.length > 0) {
+      const newHistory = [...actionHistory];
+      const lastAction = newHistory.pop();
+      setActionHistory(newHistory);
+      setTotalCalories(prevTotal => prevTotal - (lastAction.calories || 0));
+    }
   };
+
 
   const handleReset = () => {
     setActionHistory([]); // Clear the action history
@@ -45,13 +61,14 @@ function App() {
       <div className="stripes-container">
         <div className="stripe stripe-1"></div>
         <div className="stripe stripe-2"></div>
-        
         <div className="stripe stripe-4"></div>
         <div className="stripe stripe-5"></div>
       </div>
-
+      <div className="title-container">
+        <h1>Rambo's Fat-O-Meter</h1>
+      </div>
       <div className="main-content">
-        <div className="content-container"> {/* New wrapper div */}
+        <div className="content-container">
           <div className="food-list-container">
             <FoodList
               foods={foods}
@@ -71,5 +88,6 @@ function App() {
     </div>
   );
 }
+  
 
 export default App;
