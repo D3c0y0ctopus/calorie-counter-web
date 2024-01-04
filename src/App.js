@@ -65,8 +65,15 @@ function App() {
         <div className="stripe stripe-5"></div>
       </div>
       <div className="title-container">
-        <h1>Rambo's Fat-O-Meter</h1>
-      </div>
+      <h1>
+      Rambo's{' '} 
+      <span className="animated-title">
+        {"Fat-O-Meter".split('').map((char, index) => (
+          <span key={index} className="letter-animation">{char}</span>
+        ))}
+      </span>
+    </h1>
+  </div>
       <div className="main-content">
         <div className="content-container">
           <div className="food-list-container">

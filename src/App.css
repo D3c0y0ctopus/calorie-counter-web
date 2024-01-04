@@ -45,9 +45,8 @@ body {
   display: flex;
   justify-content: row; /* Horizontally center the content */
   align-items: flex-start; /* Start aligning items from the top */
-
   width: 100%;
-  padding-top: 60px; /* Ensure this is the height of your stripes container */
+  padding-top: 20px; /* Ensure this is the height of your stripes container */
   padding-bottom: 20px;
 }
 
@@ -63,7 +62,7 @@ body {
 
 .title-container {
   text-align: center;
-  padding: 20px 0; /* Add padding above and below the title */
+  padding: 10px 0; /* Add padding above and below the title */
   width: 100%; /* Ensure the title container takes full width */
 }
 
@@ -71,9 +70,30 @@ body {
   font-family: 'mario', Arial, sans-serif; /* Use your custom font */
   color: #FFF; /* Choose a color that fits your design */
   font-size: 35px; /* Adjust the size as needed */
-  margin: 5; /* Remove default margins */
+ 
 } 
 
+/* Animated part of the title */
+.animated-title {
+  display: inline; /* Keep the flow inline with the static text */
+}
+/* Keyframe animation for changing colors */
+@keyframes colorChange {
+  0%, 100% { color: #ef5777; }
+  20% { color: #FF7F00; }
+  40% { color: #ffd32a; }
+  60% { color: #05c46b; }
+  80% { color: #0fbcf9; }
+}
+
+
+/* Apply the animation to each letter */
+.letter-animation {
+  display: inline-block; /* Allows individual animation */
+  animation: colorChange 4s steps(8, end) infinite; /* Apply the keyframe animation */
+}
+
+/* You can adjust the animation duration and delay to control the speed and sync */
 
 /* Add styles for the food list container to center its content */
 .food-list-container {
