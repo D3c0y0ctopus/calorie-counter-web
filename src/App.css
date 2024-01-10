@@ -48,6 +48,7 @@ body {
   width: 100%;
   padding-top: 20px; /* Ensure this is the height of your stripes container */
   padding-bottom: 20px;
+  
 }
 
 .side-container {
@@ -58,6 +59,21 @@ body {
   justify-content: center; /* Center children vertically */
   align-items: center; /* Center children horizontally */
   margin-left: 20px; /* Spacing between list and side content */
+}
+
+/* Media query for full browser width */
+@media (min-width: 1200px) { /* Adjust the min-width as needed */
+  .side-container {
+    padding-right: 10%; /* Add padding to push the content more to the right */
+    /* Or you can use margin-right if padding is not suitable for your layout */
+  }
+}
+
+/* You may also want to adjust the max-width of the side-container to bring it closer to the food-list-container */
+@media (min-width: 1200px) {
+  .side-container {
+    max-width: 10%; /* Adjust as needed */
+  }
 }
 
 .title-container {
