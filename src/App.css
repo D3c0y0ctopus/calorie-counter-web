@@ -68,7 +68,7 @@ body {
 
 .title-container h1 {
   font-family: 'mario', Arial, sans-serif; /* Use your custom font */
-  color: #FFF; /* Choose a color that fits your design */
+  color: #FFFCEE; /* Choose a color that fits your design */
   font-size: 35px; /* Adjust the size as needed */
  
 } 
@@ -81,7 +81,7 @@ body {
 @keyframes colorChange {
   0%, 100% { color: #ef5777; }
   20% { color: #FF7F00; }
-  40% { color: #ffd32a; }
+  40% { color: #575fcf; }
   60% { color: #05c46b; }
   80% { color: #0fbcf9; }
 }
@@ -128,7 +128,7 @@ body {
 .food-item {
   cursor: pointer;
   margin-bottom: 10px; /* Adjust line spacing between food items */
-  font-size: 24px; /* Adjust font size as needed */
+  font-size: 20px; /* Adjust font size as needed */
 }
 
 .food-item:hover {
