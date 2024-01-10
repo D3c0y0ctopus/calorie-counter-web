@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a52d9255f2bfb7e2aa7f9240a12393c9",
+    "revision": "9bd9622a326ece487a676d977e8ec9b4",
     "url": "/calorie-counter-web/index.html"
   },
   {
-    "revision": "e421e852ce37480d0cbb",
+    "revision": "b8beafe3ce3a81451ce3",
     "url": "/calorie-counter-web/static/css/main.fc720e3e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/calorie-counter-web/static/js/3.e1abf215.chunk.js"
   },
   {
-    "revision": "e421e852ce37480d0cbb",
-    "url": "/calorie-counter-web/static/js/main.754382b5.chunk.js"
+    "revision": "b8beafe3ce3a81451ce3",
+    "url": "/calorie-counter-web/static/js/main.1c703f01.chunk.js"
   },
   {
     "revision": "ce95f5eb40b935bd10d3",

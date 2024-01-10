@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/calorie-counter-web/static/css/main.fc720e3e.chunk.css",
-    "main.js": "/calorie-counter-web/static/js/main.754382b5.chunk.js",
-    "main.js.map": "/calorie-counter-web/static/js/main.754382b5.chunk.js.map",
+    "main.js": "/calorie-counter-web/static/js/main.1c703f01.chunk.js",
+    "main.js.map": "/calorie-counter-web/static/js/main.1c703f01.chunk.js.map",
     "runtime-main.js": "/calorie-counter-web/static/js/runtime-main.7eded731.js",
     "runtime-main.js.map": "/calorie-counter-web/static/js/runtime-main.7eded731.js.map",
     "static/js/2.adcedab8.chunk.js": "/calorie-counter-web/static/js/2.adcedab8.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.e1abf215.chunk.js": "/calorie-counter-web/static/js/3.e1abf215.chunk.js",
     "static/js/3.e1abf215.chunk.js.map": "/calorie-counter-web/static/js/3.e1abf215.chunk.js.map",
     "index.html": "/calorie-counter-web/index.html",
-    "precache-manifest.9d10a8fdb45872be831f791707e2c4b0.js": "/calorie-counter-web/precache-manifest.9d10a8fdb45872be831f791707e2c4b0.js",
+    "precache-manifest.a692ff4d9aa64454e56d95d2c1bd5c7e.js": "/calorie-counter-web/precache-manifest.a692ff4d9aa64454e56d95d2c1bd5c7e.js",
     "service-worker.js": "/calorie-counter-web/service-worker.js",
     "static/css/main.fc720e3e.chunk.css.map": "/calorie-counter-web/static/css/main.fc720e3e.chunk.css.map",
     "static/js/2.adcedab8.chunk.js.LICENSE.txt": "/calorie-counter-web/static/js/2.adcedab8.chunk.js.LICENSE.txt",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.7eded731.js",
     "static/js/2.adcedab8.chunk.js",
     "static/css/main.fc720e3e.chunk.css",
-    "static/js/main.754382b5.chunk.js"
+    "static/js/main.1c703f01.chunk.js"
   ]
 }
