@@ -11,7 +11,7 @@ function App() {
   const [actionHistory, setActionHistory] = useState([]);
 
   useEffect(() => {
-    Papa.parse('/foodData.csv', {
+    Papa.parse(`${process.env.PUBLIC_URL}/foodData.csv`, {
       download: true,
       header: true,
       complete: (result) => {
