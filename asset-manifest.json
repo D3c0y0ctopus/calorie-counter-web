@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/calorie-counter-web/static/css/main.fc720e3e.chunk.css",
-    "main.js": "/calorie-counter-web/static/js/main.1c703f01.chunk.js",
-    "main.js.map": "/calorie-counter-web/static/js/main.1c703f01.chunk.js.map",
-    "runtime-main.js": "/calorie-counter-web/static/js/runtime-main.7eded731.js",
-    "runtime-main.js.map": "/calorie-counter-web/static/js/runtime-main.7eded731.js.map",
-    "static/js/2.adcedab8.chunk.js": "/calorie-counter-web/static/js/2.adcedab8.chunk.js",
-    "static/js/2.adcedab8.chunk.js.map": "/calorie-counter-web/static/js/2.adcedab8.chunk.js.map",
-    "static/js/3.e1abf215.chunk.js": "/calorie-counter-web/static/js/3.e1abf215.chunk.js",
-    "static/js/3.e1abf215.chunk.js.map": "/calorie-counter-web/static/js/3.e1abf215.chunk.js.map",
-    "index.html": "/calorie-counter-web/index.html",
-    "precache-manifest.a692ff4d9aa64454e56d95d2c1bd5c7e.js": "/calorie-counter-web/precache-manifest.a692ff4d9aa64454e56d95d2c1bd5c7e.js",
-    "service-worker.js": "/calorie-counter-web/service-worker.js",
-    "static/css/main.fc720e3e.chunk.css.map": "/calorie-counter-web/static/css/main.fc720e3e.chunk.css.map",
-    "static/js/2.adcedab8.chunk.js.LICENSE.txt": "/calorie-counter-web/static/js/2.adcedab8.chunk.js.LICENSE.txt",
-    "static/media/mario.ttf": "/calorie-counter-web/static/media/mario.e0257ee3.ttf"
+    "main.css": "/rambos-lard-o-meter/static/css/main.2a3b6717.chunk.css",
+    "main.js": "/rambos-lard-o-meter/static/js/main.2ac19cce.chunk.js",
+    "main.js.map": "/rambos-lard-o-meter/static/js/main.2ac19cce.chunk.js.map",
+    "runtime-main.js": "/rambos-lard-o-meter/static/js/runtime-main.934d6e78.js",
+    "runtime-main.js.map": "/rambos-lard-o-meter/static/js/runtime-main.934d6e78.js.map",
+    "static/js/2.adcedab8.chunk.js": "/rambos-lard-o-meter/static/js/2.adcedab8.chunk.js",
+    "static/js/2.adcedab8.chunk.js.map": "/rambos-lard-o-meter/static/js/2.adcedab8.chunk.js.map",
+    "static/js/3.e1abf215.chunk.js": "/rambos-lard-o-meter/static/js/3.e1abf215.chunk.js",
+    "static/js/3.e1abf215.chunk.js.map": "/rambos-lard-o-meter/static/js/3.e1abf215.chunk.js.map",
+    "index.html": "/rambos-lard-o-meter/index.html",
+    "precache-manifest.fa7f56a90fd95cdfe7f5c1a7a0a0dd27.js": "/rambos-lard-o-meter/precache-manifest.fa7f56a90fd95cdfe7f5c1a7a0a0dd27.js",
+    "service-worker.js": "/rambos-lard-o-meter/service-worker.js",
+    "static/css/main.2a3b6717.chunk.css.map": "/rambos-lard-o-meter/static/css/main.2a3b6717.chunk.css.map",
+    "static/js/2.adcedab8.chunk.js.LICENSE.txt": "/rambos-lard-o-meter/static/js/2.adcedab8.chunk.js.LICENSE.txt",
+    "static/media/mario.ttf": "/rambos-lard-o-meter/static/media/mario.e0257ee3.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.7eded731.js",
+    "static/js/runtime-main.934d6e78.js",
     "static/js/2.adcedab8.chunk.js",
-    "static/css/main.fc720e3e.chunk.css",
-    "static/js/main.1c703f01.chunk.js"
+    "static/css/main.2a3b6717.chunk.css",
+    "static/js/main.2ac19cce.chunk.js"
   ]
 }
