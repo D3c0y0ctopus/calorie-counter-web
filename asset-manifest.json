@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rambos-lard-o-meter/static/css/main.42ab9e1d.chunk.css",
+    "main.css": "/rambos-lard-o-meter/static/css/main.ad46ab5f.chunk.css",
     "main.js": "/rambos-lard-o-meter/static/js/main.2ac19cce.chunk.js",
     "main.js.map": "/rambos-lard-o-meter/static/js/main.2ac19cce.chunk.js.map",
     "runtime-main.js": "/rambos-lard-o-meter/static/js/runtime-main.934d6e78.js",
@@ -10,16 +10,16 @@
     "static/js/3.e1abf215.chunk.js": "/rambos-lard-o-meter/static/js/3.e1abf215.chunk.js",
     "static/js/3.e1abf215.chunk.js.map": "/rambos-lard-o-meter/static/js/3.e1abf215.chunk.js.map",
     "index.html": "/rambos-lard-o-meter/index.html",
-    "precache-manifest.c0350f830b4ae73eb14babd4b3973aaf.js": "/rambos-lard-o-meter/precache-manifest.c0350f830b4ae73eb14babd4b3973aaf.js",
+    "precache-manifest.09de962fef29f018d978f1c08948063d.js": "/rambos-lard-o-meter/precache-manifest.09de962fef29f018d978f1c08948063d.js",
     "service-worker.js": "/rambos-lard-o-meter/service-worker.js",
-    "static/css/main.42ab9e1d.chunk.css.map": "/rambos-lard-o-meter/static/css/main.42ab9e1d.chunk.css.map",
+    "static/css/main.ad46ab5f.chunk.css.map": "/rambos-lard-o-meter/static/css/main.ad46ab5f.chunk.css.map",
     "static/js/2.adcedab8.chunk.js.LICENSE.txt": "/rambos-lard-o-meter/static/js/2.adcedab8.chunk.js.LICENSE.txt",
     "static/media/mario.ttf": "/rambos-lard-o-meter/static/media/mario.e0257ee3.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.934d6e78.js",
     "static/js/2.adcedab8.chunk.js",
-    "static/css/main.42ab9e1d.chunk.css",
+    "static/css/main.ad46ab5f.chunk.css",
     "static/js/main.2ac19cce.chunk.js"
   ]
 }

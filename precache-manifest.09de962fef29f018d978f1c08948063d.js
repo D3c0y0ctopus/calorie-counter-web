@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fb767a0fcfe4ff0eed17396bb0eb1004",
+    "revision": "741c8fe05c0ea8c35abc9e0140375f8c",
     "url": "/rambos-lard-o-meter/index.html"
   },
   {
-    "revision": "e966037dba344445ad5b",
-    "url": "/rambos-lard-o-meter/static/css/main.42ab9e1d.chunk.css"
+    "revision": "6c560215af11236a26cf",
+    "url": "/rambos-lard-o-meter/static/css/main.ad46ab5f.chunk.css"
   },
   {
     "revision": "294cf96c9cfa8a48d13c",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rambos-lard-o-meter/static/js/3.e1abf215.chunk.js"
   },
   {
-    "revision": "e966037dba344445ad5b",
+    "revision": "6c560215af11236a26cf",
     "url": "/rambos-lard-o-meter/static/js/main.2ac19cce.chunk.js"
   },
   {
