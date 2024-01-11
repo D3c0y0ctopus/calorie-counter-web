@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/rambos-lard-o-meter/precache-manifest.fa7f56a90fd95cdfe7f5c1a7a0a0dd27.js"
+  "/rambos-lard-o-meter/precache-manifest.c0350f830b4ae73eb14babd4b3973aaf.js"
 );
 
 self.addEventListener('message', (event) => {
