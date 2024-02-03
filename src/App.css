@@ -104,12 +104,12 @@ body {
 
 /* Normal calories color */
 .calories-normal {
-  color: #05c46b; /* Green */
+  color: #0be881; /* Green */
 }
 
 /* High calories color */
 .calories-high {
-  color: #ef5777; /* Red */
+  color: #ff4757; /* Red */
 }
 /* Apply the animation to each letter */
 .letter-animation {
